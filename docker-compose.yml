@@ -1,0 +1,15 @@
+# Docker Compose-File
+
+services:
+  app:
+    build: .
+    container_name: api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+#     networks:
+#       - app_network
+# networks:
+#   app_network:
+#     driver: bridge
